@@ -1,0 +1,30 @@
+{
+  "name": "status",
+  "version": "1.0.0",
+  "description": "status daashboard",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pa'tron Johnson",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "handlebars-helper-include": "^0.2.0",
+    "mongodb": "*",
+    "mongoose": "^5.0.2",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

@@ -1,0 +1,86 @@
+
+<link rel="import" href="https://cdn.rawgit.com/zerodevx/zero-transformicon/v0.1.0/build/zero-transformicon.build.html">
+<div class="container-fluid">
+			<h1 class="page-header" style="color: white;">Profile</h1>
+      {{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+		</div>	
+	<div class="row container-fluid well well-md">
+      <legend>
+    CREATE NEW USER 
+  </legend>
+    <zero-transformicon id="btn1" icon="plus-minus" color="white"></zero-transformicon>
+		<form class="form-horizontal" method="post" action="/users/register">
+<fieldset>
+	<!-- Form Name -->
+
+
+<div class="group1">
+	<div class="form-group">
+  <label class="col-md-4 control-label" for="USERNAME">NAME</label>  
+  <div class="col-md-4">
+  <input  type="text" placeholder="" class="form-control input-md" name="name">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group group1">
+  <label class="col-md-4 control-label" for="ADDPASSWORD">PASSWORD</label>  
+  <div class="col-md-4">
+  <input name="password" type="password" placeholder="" class="form-control input-md" >
+    
+  </div>
+</div>
+
+<div class="form-group group1">
+  <label class="col-md-4 control-label" for="ADDPASSWORD">CONFIRM PASSWORD</label>  
+  <div class="col-md-4">
+  <input name="password2" type="password" placeholder="" class="form-control input-md" >
+    
+  </div>
+</div>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="MAILID">EMAIL</label>  
+  <div class="col-md-4">
+  <input  name="email" type="email" placeholder="" class="form-control input-md" >
+    
+  </div>
+</div>
+
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-8">
+    <button type="submit"  name="button1id" class="btn btn-success">CREATE</button>
+  </div>
+</div>
+</div>
+<!-- Text input-->
+
+
+</fieldset>
+</form>
+	
+	</div>
+
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+		$(".group1 , .group2").hide()
+		$('#btn1').on("click", function(){
+			$('.group1').slideToggle()
+		})
+		$('#btn2').on("click", function(){
+			$('.group2').slideToggle()
+		})
+	</script>
